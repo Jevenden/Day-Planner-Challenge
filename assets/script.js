@@ -3,7 +3,7 @@ let now = moment().format("MMMM Do YYYY: h:mm");
 let currentDay = document.getElementById("currentDay");
 currentDay.innerHTML = now;
 
-// Clear Events Button (Fix this later John)
+// Clear events button
 $("#clear").click(function () {
   window.localStorage.clear();
   $(".timeBlock").val("");
@@ -12,9 +12,9 @@ $("#clear").click(function () {
 // Pulls the current hour from Moment into a variable
 let timeOfDay = moment().format("HH");
 
-// Loops over timeblocks and turns each of their IDs into a number
+// Loops over the timeblocks and turns each of their IDs into a number
 $(".timeBlock").each(function () {
-  let checkHour = parseInt($(this).attr("id").split("block")[1]);
+  let checkHour = parseInt($(this).attr("id"));
 
   // Compares the current hour of the day to the number created in the previous function and applies a preset CSS class accordingly
   if (checkHour == timeOfDay) {
@@ -32,7 +32,7 @@ $(".timeBlock").each(function () {
   }
 });
 
-// Allows each timeblock's save button to save what's in the time block to local storage for later recovery
+// Allows each timeblock's save button to save the contents of the time block to local storage for later recovery
 $(".saveButton").click(function () {
   let time = $(this).attr("id");
   let message = $(this).siblings(".timeBlock").val();
