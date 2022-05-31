@@ -30,6 +30,7 @@ WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+```
 
 ## Methodology
 
@@ -43,8 +44,10 @@ or removed CSS classes according to the current time. Following that, I used Jqu
 Javascript to add functionality to the save buttons, allowing the user to save their input to
 local storage. Finally I added a "Clear" button, allowing the user to wipe the slate at the end
 of the day, or at their discretion.
+
 ```
 
-![ScreenShot](Work Day Scheduler.jpg)
+![ScreenShot](screenshot.jpg)
 
 URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
+```
