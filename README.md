@@ -45,9 +45,10 @@ Javascript to add functionality to the save buttons, allowing the user to save t
 local storage. Finally I added a "Clear" button, allowing the user to wipe the slate at the end
 of the day, or at their discretion.
 
-```
-
-![screenshot](https://user-images.githubusercontent.com/102879070/171288842-60fcf0c2-8a40-413d-8595-26cdc8e92932.jpg)
-
 URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
+
 ```
+
+
+```
+![screenshot](https://user-images.githubusercontent.com/102879070/171288842-60fcf0c2-8a40-413d-8595-26cdc8e92932.jpg)
