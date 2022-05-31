@@ -47,7 +47,7 @@ of the day, or at their discretion.
 
 ```
 
-![ScreenShot](screenshot.jpg)
+![screenshot](https://user-images.githubusercontent.com/102879070/171288842-60fcf0c2-8a40-413d-8595-26cdc8e92932.jpg)
 
 URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
 ```
