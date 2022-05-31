@@ -4,11 +4,9 @@ let currentDay = document.getElementById("currentDay");
 currentDay.innerHTML = now;
 
 // Clear Events Button (Fix this later John)
-$("#clear").click(function (event) {
-  console.log(timeOfDay);
-  if (timeOfDay > 3) {
-    console.log("John has a huge penis");
-  }
+$("#clear").click(function () {
+  window.localStorage.clear();
+  $(".timeBlock").val("");
 });
 
 // Pulls the current hour from Moment into a variable
@@ -16,22 +14,38 @@ let timeOfDay = moment().format("HH");
 
 // Loops over timeblocks and turns each of their IDs into a number
 $(".timeBlock").each(function () {
-  let checkHour = parseInt($(this).attr("id").split("hour")[1]);
+  let checkHour = parseInt($(this).attr("id").split("block")[1]);
 
   // Compares the current hour of the day to the number created in the previous function and applies a preset CSS class accordingly
-  if (checkHour < timeOfDay) {
-    $(this).addClass("past");
-    $(this).removeClass("future");
-    $(this).removeClass("present");
-  } else if (checkHour == timeOfDay) {
+  if (checkHour == timeOfDay) {
     $(this).removeClass("past");
-    $(this).addClass("present");
     $(this).removeClass("future");
-  } else {
+    $(this).addClass("present");
+  } else if (checkHour < timeOfDay) {
+    $(this).removeClass("present");
+    $(this).removeClass("future");
+    $(this).addClass("past");
+  } else if (checkHour > timeOfDay) {
     $(this).removeClass("present");
     $(this).removeClass("past");
     $(this).addClass("future");
   }
 });
 
-// If it works, remove the unnecessary ID's, John
+// Allows each timeblock's save button to save what's in the time block to local storage for later recovery
+$(".saveButton").click(function () {
+  let time = $(this).attr("id");
+  let message = $(this).siblings(".timeBlock").val();
+  window.localStorage.setItem(time, message);
+});
+
+//Pulls whatever was previously saved from local storage and places it in the correct field
+$("#btn9").siblings(".timeBlock").val(localStorage.getItem("btn9"));
+$("#btn10").siblings(".timeBlock").val(localStorage.getItem("btn10"));
+$("#btn11").siblings(".timeBlock").val(localStorage.getItem("btn11"));
+$("#btn12").siblings(".timeBlock").val(localStorage.getItem("btn12"));
+$("#btn13").siblings(".timeBlock").val(localStorage.getItem("btn13"));
+$("#btn14").siblings(".timeBlock").val(localStorage.getItem("btn14"));
+$("#btn15").siblings(".timeBlock").val(localStorage.getItem("btn15"));
+$("#btn16").siblings(".timeBlock").val(localStorage.getItem("btn16"));
+$("#btn17").siblings(".timeBlock").val(localStorage.getItem("btn17"));
