@@ -36,14 +36,14 @@ THEN the saved events persist
 
 Initially I worked with Moment.js to set a functional clock in the header provided, and added
 some simple styling elements in CSS. Afterwords I used Bootstrap to create rows and columns for
-each hour of the working day, aas well as time markers and a custom save button that I found
-online.
+each hour of the working day, adding time markers for each hour and a custom save button
+graphic that I found online.
 
-The structural elements in place, I used Jquery and Moment.js to create a function that applied
-or removed CSS classes according to the current time. Following that, I used Jquery and some rw
-Javascript to add functionality to the save buttons, allowing the user to save their input to
-local storage. Finally I added a "Clear" button, allowing the user to wipe the slate at the end
-of the day, or at their discretion.
+With the structural elements in place, I used Jquery and Moment.js to create a function that
+applied or removed CSS classes according to the current time. Following that, I used Jquery
+and some raw Javascript to add functionality to the save buttons, allowing the user to save
+their input to local storage. Finally I added a "Clear" button, allowing the user to wipe the
+slate at the end of the day, or at their discretion.
 
 URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
 
@@ -51,4 +51,5 @@ URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
 
 
 ```
+
 ![screenshot](https://user-images.githubusercontent.com/102879070/171288842-60fcf0c2-8a40-413d-8595-26cdc8e92932.jpg)
