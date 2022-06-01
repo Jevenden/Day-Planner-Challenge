@@ -51,5 +51,6 @@ URL of deployed application: https://jevenden.github.io/Day-Planner-Challenge/
 
 
 ```
+![screenshot](https://user-images.githubusercontent.com/102879070/171437656-52fbb99f-57fd-4f96-9203-d41b5b60df30.jpg)
 
-![screenshot](https://user-images.githubusercontent.com/102879070/171288842-60fcf0c2-8a40-413d-8595-26cdc8e92932.jpg)
+
